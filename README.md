@@ -4,11 +4,8 @@
 source bin/activate
 ```
 
-##### Switch to the App directory and run the webapp using the following command:
-``` cd App ```
+##### Switch to the App directory ``` cd App ``` and run the webapp using the following command:
 
-
-##### Run the App:
 ```
 uvicorn main:app
 ```
