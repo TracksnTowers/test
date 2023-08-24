@@ -11,7 +11,7 @@ cnn/logs/
 cnn/models/
 !cnn/models/.gitkeep
 
-webapp/images/*.png
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
