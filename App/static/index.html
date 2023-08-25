@@ -26,12 +26,12 @@
   </head>
 
   <body>
-      <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-3 px-8 bg-white shadow sm:items-baseline w-full">
+      <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-3 px-6 bg-white shadow sm:items-baseline w-full">
         <div class="mb-2 sm:mb-0">
-          <a href="#" class="text-2xl font-weight-bolder hover:no-underline text-gray-900 hover:text-black">Draw & Guess.ai</a>
+          <a href="#" class="text-xl font-weight-bolder hover:no-underline text-gray-800 hover:text-black">Draw & Guess.ai</a>
         </div>
-        <div class="font-sans text-gray-700 text-lg">
-          Minor Project
+        <div class="font-sans text-gray-700 text-base">
+          Minor Project Semester - V (Artificial Intelligence)
         </div>
         <div>
           <a href="https://github.com/yashrajpatilll/Draw-and-guess" class="text-sm hover:no-underline text-gray-600 hover:text-gray-800 ml-2">Github</a>
@@ -39,8 +39,12 @@
         </div>
       </nav>
 
+     <div class="font-sans text-3xl font-bold text-gray-800 mt-4 text-center" >
+      G.H. Raisoni College of Engineering & Management, Pune
+     </div> 
+    
     <div class="container px-2 mt-2">
-      <div class="content py-3 pt-5">
+      <div class="content py-3 pt-2">
         <div class="row">
           <div class="col-12 col-md-auto">
             <main></main>
@@ -68,54 +72,48 @@
       </div>
     </div>
 
-    
 
 
-
-    
     <!-- Footer -->
+    <div class="bg-white text-gray-600 space-y-4 flex-none w-full flex flex-col items-center justify-center mt-24">
+      <h2 class="text-xs max-w-md">Designed & Developed by</h2>
+  </div>
+    <div class=" h-50 w-full overflow-hidden flex flex-nowrap text-center" id="slider">
+      <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
+          <h2 class="text-lg font-bold max-w-md">Yashraj Patil</h2>
+      </div>
+      <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
+          <h2 class="text-lg font-bold max-w-md">Shrusti Gholap</h2>
+      </div>
+      <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
+          <h2 class="text-lg font-bold  max-w-md">Samiksha </h2>
 
-    <footer class="footer footer-center w-full">
-      <div class="bg-white text-gray-600 space-y-4 flex-none w-full flex flex-col items-center justify-center pt-4">
-        <h2 class="text-xs max-w-md">Designed & Developed by</h2>
-    </div>
-      <div class=" h-50 w-full overflow-hidden flex flex-nowrap text-center" id="slider">
-        <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
-            <h2 class="text-lg font-bold max-w-md">Yashraj Patil</h2>
-        </div>
-        <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
-            <h2 class="text-lg font-bold max-w-md">Shrusti Gholap</h2>
-        </div>
-        <div class="bg-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center ">
-            <h2 class="text-lg font-bold  max-w-md">Samiksha </h2>
+      </div>
+      
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.querySelector('#slider');
+      setTimeout(function moveSlide() {
+          const max = slider.scrollWidth - slider.clientWidth;
+          const left = slider.clientWidth;
   
-        </div>
-        
-    </div>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.querySelector('#slider');
-        setTimeout(function moveSlide() {
-            const max = slider.scrollWidth - slider.clientWidth;
-            const left = slider.clientWidth;
-    
-            if (max === slider.scrollLeft) {
-                slider.scrollTo({left: 0, behavior: 'smooth'})
-            } else {
-                slider.scrollBy({left, behavior: 'smooth'})
-            }
-    
-            setTimeout(moveSlide, 1500)
-        }, 1500)
-    
-    })
-    </script>
+          if (max === slider.scrollLeft) {
+              slider.scrollTo({left: 0, behavior: 'smooth'})
+          } else {
+              slider.scrollBy({left, behavior: 'smooth'})
+          }
+  
+          setTimeout(moveSlide, 1500)
+      }, 1500)
+  })
+  </script>
 
-<div class="bg-gradient-to-t from-green-200 to-white text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center pb-3 pt-1">
-  <h2 class="text-base max-w-md ">Under the guidance of Prof. Yogesh Mali</h2>
+<div class="bg-gradient-to-t from-green-100 to-green-50 text-gray-800 space-y-4 flex-none w-full flex flex-col items-center justify-center pb-3 ">
+<h2 class="text-sm max-w-md ">Under the guidance of Prof.Yogesh Mali</h2>
 </div>
-    </footer>
-  
+
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.8/dist/tf-tflite.min.js"></script>
 

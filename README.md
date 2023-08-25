@@ -1,4 +1,4 @@
-## Steps to activate Virtual Envirnoment
+### Steps to activate Virtual Envirnoment
 ##### Open virtual-env Folder:
 ```
 source bin/activate
